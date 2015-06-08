@@ -55,8 +55,9 @@ func New(m *metrics.MetricContext, Step time.Duration) *MemStat {
 	// initialize all gauges
 	misc.InitializeMetrics(s, m, "memstat", true)
 
-	host := C.mach_host_self()
-	C.host_page_size(C.host_t(host), &c.Pagesize)
+	host := "1" //C.mach_host_self()
+	_ = host
+	//C.host_page_size(C.host_t(host), &c.Pagesize)
 
 	// collect metrics every Step
 	ticker := time.NewTicker(Step)

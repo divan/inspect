@@ -39,7 +39,6 @@ type MemStat struct {
 	Mapped            *metrics.Gauge
 	Shmem             *metrics.Gauge
 	Slab              *metrics.Gauge
-	SReclaimable      *metrics.Gauge
 	SUnreclaim        *metrics.Gauge
 	KernelStack       *metrics.Gauge
 	PageTables        *metrics.Gauge
@@ -88,7 +87,7 @@ func New(m *metrics.MetricContext, Step time.Duration) *MemStat {
 
 // Free returns free physical memory including buffers/caches/sreclaimable
 func (s *MemStat) Free() float64 {
-	return s.MemFree.Get() + s.Buffers.Get() + s.Cached.Get() + s.SReclaimable.Get()
+	return s.MemFree.Get() // + s.Buffers.Get() + s.Cached.Get()
 }
 
 // Usage returns physical memory in use; not including buffers/cached/sreclaimable

@@ -410,9 +410,11 @@ func (s *PerProcessStatMetrics) Collect() {
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		f := strings.Split(scanner.Text(), " ")
-		s.Utime.Set(misc.ParseUint(f[13]))
-		s.Stime.Set(misc.ParseUint(f[14]))
-		s.Rss.Set(float64(misc.ParseUint(f[23])))
+		if len(f) > 23 {
+			s.Utime.Set(misc.ParseUint(f[13]))
+			s.Stime.Set(misc.ParseUint(f[14]))
+			s.Rss.Set(float64(misc.ParseUint(f[23])))
+		}
 	}
 
 	// collect IO metrics

@@ -187,7 +187,9 @@ func parseCPUline(s *PerCPU, f []string) {
 	s.Irq.Set(misc.ParseUint(f[6]))
 	s.Softirq.Set(misc.ParseUint(f[7]))
 	s.Steal.Set(misc.ParseUint(f[8]))
-	s.Guest.Set(misc.ParseUint(f[9]))
+	if len(f) > 9 {
+		s.Guest.Set(misc.ParseUint(f[9]))
+	}
 	s.Total.Set(s.User.Get() + s.UserLowPrio.Get() + s.System.Get() + s.Idle.Get())
 }
 

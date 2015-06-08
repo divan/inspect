@@ -1,3 +1,4 @@
+// +build darwin
 // Copyright (c) 2014 Square, Inc
 
 package pidstat
