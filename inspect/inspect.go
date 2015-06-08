@@ -13,12 +13,12 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/square/inspect/inspect/osmain"
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/cpustat"
-	"github.com/square/inspect/os/memstat"
-	"github.com/square/inspect/os/misc"
-	"github.com/square/inspect/os/pidstat"
+	"github.com/divan/inspect/inspect/osmain"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/cpustat"
+	"github.com/divan/inspect/os/memstat"
+	"github.com/divan/inspect/os/misc"
+	"github.com/divan/inspect/os/pidstat"
 	"github.com/mgutz/ansi"
 )
 

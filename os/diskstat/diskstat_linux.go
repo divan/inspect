@@ -13,8 +13,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/misc"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/misc"
 )
 
 // DiskStat represents statistics collected for all disks (block devices) present

@@ -1,9 +1,9 @@
 package osmain
 
 import (
-	"github.com/square/inspect/os/cpustat"
-	"github.com/square/inspect/os/memstat"
-	"github.com/square/inspect/os/pidstat"
+	"github.com/divan/inspect/os/cpustat"
+	"github.com/divan/inspect/os/memstat"
+	"github.com/divan/inspect/os/pidstat"
 )
 
 // OsIndependentStats must be implemented by all supported platforms

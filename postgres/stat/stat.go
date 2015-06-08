@@ -12,9 +12,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/misc"
-	"github.com/square/inspect/postgres/tools"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/misc"
+	"github.com/divan/inspect/postgres/tools"
 )
 
 //PostgresStat stores info on the db

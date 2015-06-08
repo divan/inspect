@@ -6,8 +6,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/misc"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/misc"
 )
 
 // TODO: Per CPU stats - are they available?

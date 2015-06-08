@@ -14,10 +14,10 @@ import (
 	"time"
 
 	"code.google.com/p/goconf/conf"
-	"github.com/square/inspect/metricchecks"
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/mysql/dbstat"
-	"github.com/square/inspect/mysql/tablestat"
+	"github.com/divan/inspect/metricchecks"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/mysql/dbstat"
+	"github.com/divan/inspect/mysql/tablestat"
 )
 
 func main() {

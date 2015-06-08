@@ -15,9 +15,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/mysql/tools"
-	"github.com/square/inspect/os/misc"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/mysql/tools"
+	"github.com/divan/inspect/os/misc"
 )
 
 // Collection of metrics and connection to database

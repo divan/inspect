@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/misc"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/misc"
 )
 
 // LoadStat represents load average metrics for 1/5/15 Minutes of

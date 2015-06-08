@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/square/inspect/metricchecks"
+	"github.com/divan/inspect/metricchecks"
 )
 
 func main() {

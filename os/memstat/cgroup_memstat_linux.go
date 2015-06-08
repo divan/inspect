@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/square/inspect/metrics"
-	"github.com/square/inspect/os/misc"
+	"github.com/divan/inspect/metrics"
+	"github.com/divan/inspect/os/misc"
 )
 
 // CgroupStat represents memory usage statistics for all non-default
